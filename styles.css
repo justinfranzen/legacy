@@ -1,0 +1,2717 @@
+html, body {
+    overflow-x: hidden;
+}
+
+#header {
+    width: 100%;
+    height: 145px;
+    padding: 10px 0 15px 0;
+    display: block;
+    position: fixed;
+    z-index: 50;
+    padding-top: 10px;
+    background: lightgray;
+    margin: 0;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 5px 15px 0px gray;
+}
+
+#mobile-nav {
+    visibility: hidden;
+}
+
+#myNav {
+    visibility: hidden;
+}
+
+#aboutNav {
+    visibility: hidden;
+}
+
+#logo {
+    float: left;
+    margin-left: 3%;
+    margin-top: 20px;
+    width: 250px;
+}
+
+#main-nav-bar {
+    float: right;
+    margin-right: 3%;
+    margin-top: 50px;
+}
+
+.main-nav {
+    padding-left: 0;
+}
+
+.main-nav li {
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px; 
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+}
+
+#links {
+    text-align: center;
+    display: inline-flex;
+}
+
+.main-nav li a {
+    color: black;   
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.main-nav li a:hover {
+    background: lightsteelblue;
+    color: black;
+}
+
+.sub-menu-content, .sub-menu-content2, .sub-menu-content3 {
+    display: none;
+    position: absolute;
+    width: auto;
+    padding-left: 10;
+    padding-top: 0;
+    margin-left: 20px;
+    background: white;
+    margin-top: 8px;
+    padding-bottom: 0;
+    height: auto; 
+    text-align: left;
+    z-index: 1;
+    box-shadow: 0px 3px 10px -2px gray;
+}
+
+.children-sub-menu {
+    display: none;
+    position: absolute;
+    width: 258px;
+    padding-left: 10;
+    padding-top: 0;
+    margin-left: 203px;
+    background: white;
+    margin-top: -46px;
+    padding-bottom: 0;
+    height: auto; 
+    text-align: left;
+    z-index: 1;
+    color: black;
+    box-shadow: 0px 3px 10px -2px gray;
+}
+
+.adult-sub-menu {
+    display: none;
+    position: absolute;
+    width: 181px;
+    padding-left: 10;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: 203px;
+    background: white;
+    margin-top: -46px;
+    height: auto; 
+    text-align: left;
+    z-index: 1;
+    color: black;
+    box-shadow: 0px 3px 10px -2px gray;
+}
+
+.about-dropdown li a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#about-dropdown:hover .sub-menu-content, #classes-dropdown:hover .sub-menu-content2, #online-dropdown:hover .sub-menu-content3, #children-dropdown:hover .children-sub-menu, #adult-dropdown:hover .adult-sub-menu {
+    display: block;
+}
+
+.dropdown-content ul {
+    font-family: 'Lato', sans-serif;
+    list-style-type: none;
+}
+
+.sub-menu-content li, .sub-menu-content2 li, .sub-menu-content3 li {
+    margin-right: 0;
+}
+
+.sub-menu-content li a, .sub-menu-content2 li a, .sub-menu-content3 li a {
+    display: inherit;
+}
+
+.sub-menu-content li a:hover, .sub-menu-content2 li a:hover, .sub-menu-content3 li a:hover {
+    background: lightsteelblue;
+    color: black;
+}
+
+.sub-menu-content li a {
+    padding-left: 13px;
+    margin-left: -30px;
+    padding-right: 35px;
+}
+
+.sub-menu-content2 li a, .sub-menu-content3 li a {
+    padding-left: 15px;
+    margin-left: -30px;
+    padding-right: 25px;
+}
+
+.sub-menu-content3 li a {
+    padding-left: 15px;
+    margin-left: -30px;
+    padding-right: 50px;
+}
+
+.children-sub-menu li a {
+    padding-left: 15px;
+    margin-left: -30px;
+    padding-right: 25px;
+}
+
+.about-dropdown {
+    display: none;
+    position: relative;
+    color: white;
+    list-style-type: none;
+}
+
+#main {
+    background: white;
+    margin-top: 145px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+    padding-bottom: 1px;
+}
+
+#index-title-img {
+    background-image: url('../images/index-title.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    margin-top: -25px;
+}
+
+#about-title-img {
+    background-image: url('../images/about-title-img.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    margin-top: -25px;
+}
+
+#schedule-title-img {
+    background-image: url('../images/schedule-title-img.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    margin-top: -25px;
+}
+
+#masterjane-title-img {
+    background-image: url('../images/mj-title.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    margin-top: -25px;
+}
+
+#childrens-title-img {
+    background-image: url('../images/childrens-tkd.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    margin-top: -25px;
+}
+
+#children-rules-img {
+    background-image: url('../images/children-rules.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    margin-top: -25px;
+}
+
+#adult-title-img {
+    background-image: url('../images/adult-title-img.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    margin-top: -25px;
+}
+
+#adult-rules-img {
+    background-image: url('../images/adult-rules.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    margin-top: -25px;
+}
+
+#school-rules-img {
+    background-image: url('../images/school-rules.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    margin-top: -25px;
+}
+
+#faq-title-img {
+    background-image: url('../images/faq-title-img.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    margin-top: -25px;
+}
+
+#gallery-title-img {
+    background-image: url('../images/gallery-title-img.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    margin-top: -25px;
+}
+
+#terminology-title-img {
+    background-image: url('../images/terminology-title-img.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    margin-top: -25px;
+}
+
+#contact-title-img {
+    background-image: url('../images/contact-title-img.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    margin-top: -25px;
+}
+
+.title-img {
+    max-width: 100%;
+    margin-top: -25px;
+}
+
+.img-title {
+    display: none;
+    position: absolute;
+    color: white;
+    left: 0;
+    right: 0;
+    margin-top: 90px;
+    font-size: 60px;
+}
+
+#content {
+    width: 90%;
+    margin: 50px auto 80px auto;
+    font-family: 'Lato', 'open sans';
+    font-size: 16px;
+}
+
+p {
+    line-height: 1.7;
+}
+
+#learn {
+    font-size: 50px;
+    margin-bottom: 0;
+    padding: 50px 0 70px 0;
+}
+
+.circle-box{
+  overflow:hidden;
+  -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -khtml-border-radius: 50%;
+  display: block;
+  transform: translateZ(0);
+    width: 200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.circle {
+    width: 100%;
+    padding-top: 100%; /* 1:1 Aspect Ratio */
+    position: relative; /* If you want text inside of it */
+  	transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+      background-position:center;
+  background-image: url("../images/adult.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -khtml-border-radius: 50%;
+}
+
+.circle2 {
+    width: 100%;
+    padding-top: 100%; /* 1:1 Aspect Ratio */
+    position: relative; /* If you want text inside of it */
+  	transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+      background-position:center;
+  background-image: url("../images/child.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -khtml-border-radius: 50%;
+}
+
+.circle3 {
+    width: 100%;
+    padding-top: 100%; /* 1:1 Aspect Ratio */
+    position: relative; /* If you want text inside of it */
+  	transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+      background-position:center;
+  background-image: url("../images/master-jane.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -khtml-border-radius: 50%;
+}
+
+.circle4 {
+    width: 100%;
+    padding-top: 100%; /* 1:1 Aspect Ratio */
+    position: relative; /* If you want text inside of it */
+  	transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+      background-position:center;
+  background-image: url("../images/faq.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -khtml-border-radius: 50%;
+}
+
+.circle-box:hover .circle, .circle-box:hover .circle2, .circle-box:hover .circle3, .circle-box:hover .circle4  {
+  transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  -ms-transform: scale(1.3); /* IE 9 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1.1, M12=0, M21=0, M22=1.1, SizingMethod='auto expand')"; /* IE8 */
+   filter: progid:DXImageTransform.Microsoft.Matrix(M11=1.1, M12=0, M21=0, M22=1.1, SizingMethod='auto expand'); /* IE6 and 7 */
+}
+
+figcaption {
+    padding: 0 !important;
+    color: black !important;
+    background: none !important;
+    margin-top: 20px !important;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+figcaption a {
+    color: black;
+}
+
+figcaption a:hover {
+    color: gray;
+    text-decoration: none;
+    transition-duration: .3s;
+}
+
+figcaption a:not(hover) {
+    transition-duration: .3s;
+}
+
+#index-intro {
+    text-align: center;
+    margin: 0 auto -40px auto;
+    font-size: 18px;
+    padding: 50px 40px;
+}
+
+#bgcolor {
+    width: 100%;
+    font-family: 'Lato', 'open sans';
+    font-size: 16px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    background: lightsteelblue;
+}
+
+.bgcolor {
+    width: 90%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 80px 0 90px 0;
+}
+
+iframe {
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+}
+
+#master-jane-bio {
+    margin-top: 50px;
+}
+
+#master-jane {
+    display: block;
+    width: 350px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#master-jane2 {
+    display: block;
+    margin: 40px auto;
+    height: auto;
+    max-width: 100%;
+    width: 250px;
+}
+
+blockquote {
+    font-size: 16px !important;
+    border-left: 3px solid lightblue !important;
+}
+
+.accomplishments {
+    margin-top: 50px;
+}
+
+#accomplishments {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.school-rules {
+    display: block;
+    margin: 30px auto;
+    height: auto;
+    max-width: 100%;
+}
+
+#family-class {
+    display: block;
+    margin: 0 auto;
+}
+
+.row.children {
+    margin-top: 50px;
+}
+
+#children {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.children-tkd {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+#adult-tkd {
+    display: block;
+    width: 250px;
+    height: auto;
+    max-width: 100%;
+    margin: 50px auto 30px auto;
+}
+
+#children-rules {
+    margin: 20px auto;
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+#terminology {
+    width: 90%;
+    margin: 30px auto;
+}
+
+table {
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+th, td, tr {
+    border: 1px solid;
+}
+
+.time {
+    font-weight: 700;
+}
+
+tr {
+    text-align: center;
+    height: 40px;
+}
+
+th {
+    text-align: center !important;
+}
+
+#ages {
+    margin-top: 30px;
+    border: none;
+}
+
+#age-table {
+    border: none;
+}
+
+.age-range {
+    border: none;
+    padding: 15px;
+}
+
+#classes td {
+    padding: 15px;
+}
+
+#class-schedule {
+    width: 900px;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    max-width: 100%;
+}
+
+#video {
+    background: lightsteelblue;
+    padding: 85px 30px 40px 30px;
+    margin-bottom: -1px;
+}
+
+#white {
+    background: white;
+}
+
+#yellow {
+    background: yellow;
+}
+
+#orange {
+    background: orange;
+}
+
+#green {
+    background: green;
+}
+
+#purple {
+    background: purple;
+}
+
+#blue {
+    background: blue;
+}
+
+#brown {
+    background: brown;
+}
+
+#red {
+    background: red;
+}
+
+.white {
+    color: white;
+    border: 1px solid black;
+}
+
+#pledge {
+    width: 300px;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 15px auto;
+}
+
+#gallery {
+    margin-top: 50px;
+}
+
+.video {
+    max-width: 100%;
+    margin-bottom: 50px;
+}
+
+.blurb-images {
+    padding: 0 50px 80px 50px;
+    background-image: url('../images/bg-image.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-top: 40px;
+}
+
+.blurb {
+    width: 300px;
+    height: 520px;
+    background: lightslategray;
+    margin: 20px auto;
+}
+
+ .blurb, .blurb-image {
+    max-width: 100%;
+    }
+
+.blurb-title {
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+.blurb-info {
+    color: white;
+    width: 85%;
+    margin: 15px auto;
+}
+
+.event {
+    text-decoration: underline;
+    font-size: 17px;
+}
+
+.blurb-link {
+    color: #DD974B;
+    margin-left: 30px;
+}
+
+.blurb-link a {
+    color: #DD974B;
+}
+
+.blurb-link a:hover {
+    color: #A0522D;
+    text-decoration: none;
+    transition-duration: .5s;
+}
+
+.blurb-link a:not(:hover) {
+    color: #DD974B;
+    transition-duration: .5s;
+}
+
+.contact-us {
+    background: lightslategray;
+    height: 250px;
+    margin-bottom: -1px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.join {
+    font-size: 44px;
+    color: white;
+}
+
+.contact-button {
+    border: 2px solid lightsteelblue;
+    font-size: 28px;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+    display: block;
+    width: 200px;
+    margin: 20px auto !important;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.contact-button:hover {
+    text-decoration: none;
+    background: lightsteelblue;
+    transition-duration: .3s;
+}
+
+.contact-button:not(hover) {
+    transition-duration: .3s;
+}
+
+#about {
+    max-width: 100%;
+    width: 300px;
+    display: block;
+    margin: 0 auto 30px;
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+}
+
+h2 {
+    position: relative;
+    text-align: center;
+    font-size: 28px;
+}
+
+h3 {
+    text-align: left;
+}
+
+h1, h2, h3 {
+    font-family: 'Lato', sans-serif !important; 
+}
+
+#news {
+    margin-bottom: 0px;
+    padding-bottom: 80px;
+    padding-top: 5px;
+    background: #deeff5;
+    margin-top: 0px;
+}
+
+#current-news {
+    font-weight: 500 !important;
+    font-size: 50px !important;
+    margin-bottom: 40px;
+    padding-top: 55px;
+}
+
+.benefit {
+    margin-top: 50px;
+}
+
+.benefits-img {
+    max-width: 100%;
+    display: block;
+    margin: 20px auto;
+}
+
+#legacy {
+    text-align: left;
+}
+
+#contact-contact-info {
+    line-height: 2;
+}
+
+#location-map {
+    float: left;
+}
+
+#myForm {
+    width: 500px;
+    float: right;
+    background: #d7e1ee;
+    padding: 35px;
+    margin-top: -70px;
+    border-radius: 5px;
+}
+
+input {
+    width: 100%;
+    padding-left: 10px;
+    line-height: 35px !important;
+    padding-left: 8px;
+    border: 1.5px solid lightslategray;
+}
+
+textarea {
+    border: 1.5px solid lightslategray;
+    padding-left: 8px !important;
+    padding-top: 5px;
+}
+
+.error {
+    color: red;
+    font-family: Arial;
+}
+
+#submit {
+    width: 120px;
+    height: 50px !important;
+    border: 1.5px solid lightslategray;
+    padding: 0;
+    background: white;
+    color: black;
+    font-size: 18px;
+    border-radius: 3px;
+}
+
+#submit:hover {
+    background: lightslategray;
+    transition-duration: .3s;
+    color: white;
+}
+
+#submit:not(:hover) {
+    background: white;
+    transition-duration: .3s;
+}
+
+ .thankyou {
+        text-align: center;
+        margin: 150px 0;
+    }
+    
+    #thankyou {
+        font-size: 24px !important;
+    }
+    
+    #redirect {
+        font-size: 20px;
+        color: black;
+        background: lightgray;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+
+#redirect:hover {
+    text-decoration: none;
+}
+
+#footer {
+    background: lightgray;
+    height: 225px;
+}
+
+#footer-contact-info {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding-top: 1px;
+    line-height: 2;
+}
+
+#facebook {
+    margin-left: 10%;
+    margin-top: 50px;
+    float: right;
+}
+
+#contact-info {
+    width: auto;
+    float: left;
+    margin-top: 45px;
+    margin-right: 10%;
+    color: white;
+    font-family: Lato;
+    font-size: 16px;
+}
+
+.copyright {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: auto;
+    display: block;
+    margin-top: 160px;
+    font-size: 14px;
+}
+
+.fa.fa-facebook-square, .fa.fa-twitter, .fa.fa-google-plus {
+        font-size: 40px;
+        color: gray;
+    }
+
+.fa.fa-facebook-square:hover {
+        color: #3B5998;
+        transition: .5s;
+}
+
+.fa.fa-facebook-square:not(:hover) {
+        color: gray;
+        transition: .5s;
+}
+
+.fa.fa-twitter, .fa.fa-google-plus {
+    margin-left: 15px;
+}
+
+.fa.fa-twitter:hover {
+    color: #0084b4;
+    transition: .5s;
+}
+
+.fa.fa-twitter:not(:hover) {
+        color: gray;
+        transition: .5s;
+}
+
+.fa.fa-google-plus:hover {
+    color: #d34836;
+    transition: .5s;
+}
+
+.fa.fa-google-plus:not(:hover) {
+        color: gray;
+        transition: .5s;
+}
+
+.glyphicon {
+        margin-right: 5px;
+        color: black;
+    }
+
+.email, .phone {
+    color: black;
+}
+
+.email:hover, .phone:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.email-footer, .phone-footer {
+    color: black;
+}
+
+.footer-email, .footer-phone {
+    color: black;
+}
+
+.footer-email:hover, .footer-phone:hover {
+    color: black;
+    text-decoration: none;
+}
+
+figcaption {
+    padding: 10px 10px 10px;
+    color: white;
+    background: rgba(0,0,0,.75);
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 60%;
+  max-width: 90%;
+}
+
+/* The Close Button */
+.close {
+  float: right;
+  font-size: 50px !important;
+  font-weight: 700 !important;
+  line-height: 1;
+  color: white !important;
+  text-shadow: 0 1px 0 #fff;
+  filter: alpha(opacity=20);
+  opacity: 1.2 !important;
+    margin-right: 30px !important;
+    margin-top: -70px !important;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+    color: red;
+    text-decoration: none;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: red;
+  font-size: 18px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+    width: 200px;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.hover-shadow.thumbnail {
+    width: 250px;
+    max-width: 100%;
+}
+
+.vertical-image {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.copyright {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: auto;
+        display: block;
+        margin-top: 160px;
+        font-size: 14px;
+    }
+
+
+@media only screen and (min-width: 1076px) and (max-width: 1200px) {
+    
+    #mobile-nav {
+        visibility: visible;
+        float: right;
+        margin-right: 55px;
+        margin-top: 30px;
+        font-size: 50px !important;
+    }
+    
+    #myNav {
+        visibility: visible !important;
+    }
+    
+    #aboutNav {
+        visibility: visible !important;
+    }
+    
+    .overlay a {font-size: 24px !important; padding: 5px !important;}
+    .overlay .closebtn {
+        font-size: 60px !important;
+        top: 20px !important;
+        right: 55px !important;
+    }
+    
+ /* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+    
+.overlay-content {
+    position: relative;
+    top: 20% !important; /* 25% from the top */
+    width: 50%; /* 100% width */
+    text-align: left; /* Centered text/links */
+    margin-left: 30%; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 20px !important;
+    color: #f1f1f1;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #818181;
+    text-decoration: none;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+    
+.closebtn:hover {
+    text-decoration: none;
+    }
+    
+      /*---------ACCORDION-----------------*/
+button.accordion {
+    background: rgba(0, 50, 120, 0);
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    width: 90%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    font-size: 20px;
+    margin-left: 0;
+}
+
+button.accordion.active, button.accordion:hover {
+    color: #818181;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+div.panel {
+    padding: 0 18px;
+    background: rgba(0, 50, 120, 0);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-bottom: 0;
+}
+    
+/*----------OVERLAY NAVIGATION----------*/
+    
+    
+     #about-overlay-dropdown-sub-menu, #schedule-overlay-dropdown-sub-menu, #terminology-overlay-dropdown-sub-menu {
+        display: none;
+        color: white;
+        list-style-type: none;
+    }
+    
+    #main-nav-bar {
+        display: none;
+        }
+    
+    #main {
+        margin-top: 140px;
+    }
+    
+    iframe {
+        margin-top: 0;
+    }
+    
+    #adult-tkd {
+        margin-bottom: 30px;
+    }
+    
+    .blurb {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+    
+    .copyright {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: auto;
+        display: block;
+        margin-top: 160px;
+        font-size: 14px;
+    }
+    
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1075px) {
+    
+     #mobile-nav {
+        visibility: visible;
+        float: right;
+        margin-right: 55px;
+        margin-top: 30px;
+        font-size: 50px !important;
+    }
+    
+    #arrow {
+        position: absolute;
+        right: 0;
+        margin-right: 90px;
+        margin-top: 10px;
+    }
+    
+    #myNav {
+        visibility: visible !important;
+    }
+    
+    .overlay a {font-size: 24px !important; padding: 5px !important;}
+    .overlay .closebtn {
+        font-size: 60px !important;
+        top: 20px !important;
+        right: 55px !important;
+    }
+    
+ /* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 20% !important; /* 25% from the top */
+    width: 50%; /* 100% width */
+    text-align: left; /* Centered text/links */
+    margin-left: 30%; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 20px !important;
+    color: #f1f1f1;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #818181;
+    text-decoration: none;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.closebtn:hover {
+    text-decoration: none;
+    }
+    
+      /*---------ACCORDION-----------------*/
+button.accordion {
+    background: rgba(0, 50, 120, 0);
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    width: 90%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    font-size: 20px;
+    margin-left: 0;
+}
+
+button.accordion.active, button.accordion:hover {
+    color: #818181;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+div.panel {
+    padding: 0 18px;
+    background: rgba(0, 50, 120, 0);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-bottom: 0;
+}
+    
+    /*----------OVERLAY NAVIGATION----------*/
+    
+    
+     #about-overlay-dropdown-sub-menu, #schedule-overlay-dropdown-sub-menu, #terminology-overlay-dropdown-sub-menu {
+        display: none;
+        color: white;
+        list-style-type: none;
+    }
+    
+      #main-nav-bar {
+        display: none;
+        }
+    
+    #index-title-img {
+        margin-top: -20px;
+    }
+    
+.title-img {
+    max-width: 100%;
+    margin-top: -20px;
+}
+
+    #main {
+        margin-top: 140px;
+    }
+    
+    .blurb {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+    
+    #master-jane {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .school-rules {
+        margin: 30px auto;
+    }
+    
+    #adult-tkd {
+        margin-bottom: 30px;
+    }
+    
+    #myForm {
+        float: none;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+        max-width: 100%;
+    }
+    
+    iframe {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    
+    #facebook {
+        margin-left: 0;
+        margin-top: 50px;
+        float: right;
+    }  
+    
+    #contact-info {
+        margin-left: 0;
+    }
+    
+    .copyright {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: auto;
+        display: block;
+        margin-top: 160px;
+        font-size: 14px;
+    }
+    
+}
+
+@media only screen and (min-width: 668px) and (max-width: 767px) {
+    
+     #mobile-nav {
+        visibility: visible;
+        float: right;
+        margin-right: 35px;
+        margin-top: 30px;
+        font-size: 50px !important;
+    }
+    
+    #arrow {
+        position: absolute;
+        right: 0;
+        margin-right: 90px;
+        margin-top: 10px;
+    }
+    
+    #myNav {
+        visibility: visible !important;
+    }
+    
+    .overlay a {font-size: 24px !important; padding: 5px !important;}
+    .overlay .closebtn {
+        font-size: 60px !important;
+        top: 20px !important;
+        right: 20px !important;
+    }
+    
+ /* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 20% !important; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: left; /* Centered text/links */
+    margin-left: 5%; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 20px !important;
+    color: #f1f1f1;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #818181;
+    text-decoration: none;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.closebtn:hover {
+    text-decoration: none;
+    }
+    
+      /*---------ACCORDION-----------------*/
+button.accordion {
+    background: rgba(0, 50, 120, 0);
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    width: 90%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    font-size: 20px;
+    margin-left: 0;
+}
+
+button.accordion.active, button.accordion:hover {
+    color: #818181;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+div.panel {
+    padding: 0 18px;
+    background: rgba(0, 50, 120, 0);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-bottom: 0;
+}
+    
+/*----------OVERLAY NAVIGATION----------*/
+    
+    
+     #about-overlay-dropdown-sub-menu, #schedule-overlay-dropdown-sub-menu, #terminology-overlay-dropdown-sub-menu {
+        display: none;
+        color: white;
+        list-style-type: none;
+    }
+    
+     #main-nav-bar {
+        display: none;
+        }
+    
+    #logo {
+        width: 250px;
+        margin-top: 20px;
+    }
+    
+    #index-title-img {
+        margin-top: -15px;
+    }
+    
+.title-img {
+    max-width: 100%;
+    margin-top: -15px;
+}
+    
+    .img-title {
+        font-size: 50px;
+    }
+    
+    #main {
+        margin-top: 140px;
+        padding-top: 20px;
+    }
+    
+    .blurb {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+    
+    .circle-box {
+        width: 125px;
+        max-width: 100%;
+    }
+    
+    .space {
+        margin-top: 40px;
+    }
+    
+    #master-jane {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+    
+    #family-class {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+    
+    #about {
+        margin-top: 30px;
+    }
+    
+#child-tkd {
+    margin-bottom: 50px;
+}
+    
+    .benefits {
+        margin-top: 0 !important;
+    }
+    
+    .school-rules {
+        margin: 30px auto;
+    }
+    
+    iframe {
+        margin-top: 0;
+    }
+    
+    #myForm {
+        margin-top: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+        max-width: 100%;
+        float: none;
+    }
+    
+    #footer {
+        background: lightgray;
+        height: auto;
+        padding-bottom: 30px;
+    }
+    
+    #footer-contact-info {
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        padding-top: 1px;
+        line-height: 2;
+    }
+    
+    #facebook {
+        margin-left: 0;
+        margin-top: 50px;
+        float: right;
+    }  
+    
+    #contact-info {
+        width: auto;
+        float: left;
+        margin-top: 45px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: Lato;
+        font-size: 16px;
+}
+    
+    .copyright {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: auto;
+        display: block;
+        margin-top: 160px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+    
+     #mobile-nav {
+        visibility: visible;
+        float: right;
+        margin-right: 25px;
+        margin-top: 30px;
+        font-size: 50px !important;
+    }
+    
+     #arrow {
+        position: absolute;
+        right: 0;
+        margin-right: 90px;
+        margin-top: 10px;
+    }
+    
+    #myNav {
+        visibility: visible !important;
+    }
+    
+    .overlay a {font-size: 24px !important; padding: 5px !important;}
+    .overlay .closebtn {
+        font-size: 60px !important;
+        top: 20px !important;
+        right: 20px !important;
+    }
+    
+ /* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 20% !important; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: left; /* Centered text/links */
+    margin-left: 5%;
+    }
+    
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 20px !important;
+    color: #f1f1f1;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #818181;
+    text-decoration: none;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px !important;
+}
+    
+.closebtn:hover {
+    text-decoration: none;
+    }
+    
+  /*---------ACCORDION-----------------*/
+button.accordion {
+    background: rgba(0, 50, 120, 0);
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    width: 90%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    font-size: 20px;
+    margin-left: 0;
+}
+
+button.accordion.active, button.accordion:hover {
+    color: #818181;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+div.panel {
+    padding: 0 18px;
+    background: rgba(0, 50, 120, 0);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-bottom: 0;
+}
+    
+/*----------OVERLAY NAVIGATION----------*/
+    
+    
+     #about-overlay-dropdown-sub-menu, #schedule-overlay-dropdown-sub-menu, #terminology-overlay-dropdown-sub-menu {
+        display: none;
+        color: white;
+        list-style-type: none;
+    }
+    
+    #main-nav-bar {
+        display: none;
+        }
+    
+    #logo {
+        width: 250px;
+        margin-top: 20px;
+    }
+    
+    #main {
+        margin-top: 140px;
+        padding-top: 15px; 
+    }
+    
+.title-img {
+    max-width: 100%;
+    margin-top: -10px;
+}
+    
+    .img-title {
+        font-size: 40px;
+    }
+    
+    .blurb {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .circle-box {
+        width: 125px;
+        max-width: 100%;
+    }
+    
+    .blurb {
+        margin-top: 20px;
+    }
+    
+    .space {
+        margin-top: 40px;
+    }
+    
+    #master-jane {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+    
+    #family-class {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+    
+    #about {
+        margin-top: 30px;
+    }
+    
+#child-tkd {
+    margin-bottom: 50px;
+}
+    
+.benefits {
+    margin-top: 0 !important;
+}
+    
+    .school-rules {
+        margin: 30px auto;
+    }
+
+    #adult-tkd {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    #myForm {
+        margin-top: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+        max-width: 100%;
+        float: none;
+    }
+    
+    iframe {
+        margin-top: 0px;
+    }
+    
+    #footer {
+        background: lightgray;
+        height: 225px;
+        padding-bottom: 30px;
+    }
+    
+    #footer-contact-info {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        padding-top: 1px; 
+        line-height: 2;
+    }
+    
+    #facebook {
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        float: none;
+    }
+    
+    #contact-info {
+        width: auto;
+        margin-top: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        float: none;
+        font-family: Lato;
+        font-size: 16px;
+    }
+    
+    .copyright {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: auto;
+        display: block;
+        margin-top: 25px;
+        font-size: 14px;
+    }
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+
+    
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    
+     #mobile-nav {
+        visibility: visible;
+        float: right;
+        margin-right: 25px;
+        margin-top: 15px;
+        font-size: 50px !important;
+    }
+    
+    #myNav {
+        visibility: visible !important;
+    }
+    
+     #arrow {
+        position: absolute;
+        right: 0;
+        margin-right: 90px;
+        margin-top: 10px;
+    }
+    
+    .overlay a {font-size: 24px !important; padding: 5px !important;}
+    .overlay .closebtn {
+        font-size: 60px !important;
+        top: 0px !important;
+        right: 20px !important;
+    }
+
+    
+ /* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 20%; !important /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: left; /* Centered text/links */
+    margin-left: 5%; 
+    margin-bottom: 50px;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 20px !important;
+    color: #f1f1f1;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #818181;
+    text-decoration: none;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.closebtn:hover {
+    text-decoration: none;
+    }
+    
+  /*---------ACCORDION-----------------*/
+button.accordion {
+    background: rgba(0, 50, 120, 0);
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    width: 90%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    font-size: 20px;
+    margin-left: 0;
+}
+
+button.accordion.active, button.accordion:hover {
+    color: #818181;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+div.panel {
+    padding: 0 18px;
+    background: rgba(0, 50, 120, 0);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-bottom: 0;
+}
+    
+/*----------OVERLAY NAVIGATION----------*/
+    
+    
+     #about-overlay-dropdown-sub-menu, #schedule-overlay-dropdown-sub-menu, #terminology-overlay-dropdown-sub-menu {
+        display: none;
+        color: white;
+        list-style-type: none;
+        margin-left: -20px;
+    }
+    
+   #main-nav-bar {
+        display: none;
+        }
+    
+    #header {
+        height: 120px;
+    }
+    
+    #logo {
+        width: 225px;
+        margin-left: 5%;
+        margin-top: 13px;
+    }
+    
+    #index-title-img {
+        margin-top: -10px;
+    }
+    
+    .img-title {
+        font-size: 34px;
+    }
+    
+    #main {
+        margin-top: 120px;
+        padding-top: 10px;
+    }
+    
+    #gallery {
+        margin-top: 30px;
+    }
+    
+    #learn {
+        font-size: 40px;
+    }
+    
+    .blurb-images {
+        padding: 0px 0px 60px 0px;
+    }
+    
+    .circle-box {
+        width: 125px;
+        max-width: 100%;
+    }
+    
+    .blurb {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+    
+    .space {
+        margin-top: 40px;
+    }
+    
+    #current-news {
+        font-size: 34px !important;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    
+    #news {
+        margin-bottom: 0px;
+        padding-bottom: 50px;
+        padding-top: 5px;
+        background: #deeff5;
+        margin-top: 0px;
+    }
+    
+    .contact-us {
+        height: 220px !important;
+    }
+    
+    .join {
+        font-size: 36px;
+    }
+    
+    .contact-button {
+        font-size: 24px;
+        padding: 10px;
+        width: 160px;
+    }
+    
+    #content {
+        width: 85%;
+        margin-top: 25px;
+    }
+    
+    #master-jane {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+    
+    #family-class {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+    
+    #about {
+        margin-top: 30px;
+    }
+    
+.accomplishments {
+        margin-top: 30px;
+    }
+    
+#child-tkd {
+    margin-bottom: 35px;
+}
+    
+.bgcolor {
+        padding: 65px 0 65px 0;
+    }
+
+.benefits {
+        margin-top: 0 !important;
+    }
+    
+    .school-rules {
+        margin: 30px auto;
+    }
+    
+    #adult-tkd {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    iframe {
+        margin-top: 0px;
+    }
+    
+    #myForm {
+        margin-top: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+        max-width: 100%;
+        float: none;
+    }
+    
+    #footer {
+        background: lightgray;
+        height: 225px;
+        padding-bottom: 30px;
+    }
+    
+    #footer-contact-info {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        padding-top: 1px;
+        line-height: 2;
+    }
+    
+    #facebook {
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        float: none;
+    }
+    
+    #contact-info {
+        width: auto;
+        margin-top: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        font-family: Lato;
+        font-size: 16px;
+    }
+    
+    .copyright {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: auto;
+        display: block;
+        margin-top: 25px;
+        font-size: 14px;
+    }
+
+    
+}
+
+@media only screen and (min-width: 100px) and (max-width: 375px) {
+    
+     #mobile-nav {
+        visibility: visible;
+        float: right;
+        margin-right: 25px;
+        margin-top: 15px;
+        font-size: 35px !important;
+    }
+    
+    #myNav {
+        visibility: visible !important;
+    }
+    
+    #arrow {
+        position: absolute;
+        right: 0;
+        margin-right: 50px;
+        margin-top: 10px;
+    }
+    
+    .overlay a {font-size: 24px !important; padding: 5px !important;}
+    .overlay .closebtn {
+        font-size: 60px !important;
+        top: 0px !important;
+        right: 20px !important;
+    }
+    
+    
+ /* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 20% !important; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: left; /* Centered text/links */
+    margin-left: 5%;  
+    margin-bottom: 50px;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 20px !important;
+    color: #f1f1f1;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #818181;
+    text-decoration: none;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+    
+.closebtn:hover {
+    text-decoration: none;
+    }
+    
+      /*---------ACCORDION-----------------*/
+button.accordion {
+    background: rgba(0, 50, 120, 0);
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    width: 90%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    font-size: 20px;
+    margin-left: 0;
+}
+
+button.accordion.active, button.accordion:hover {
+    color: #818181;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+div.panel {
+    padding: 0 18px;
+    background: rgba(0, 50, 120, 0);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-bottom: 0;
+}
+
+/*----------OVERLAY NAVIGATION----------*/
+    
+    
+     #about-overlay-dropdown-sub-menu, #schedule-overlay-dropdown-sub-menu, #terminology-overlay-dropdown-sub-menu {
+        display: none;
+        color: white;
+        list-style-type: none;
+        margin-left: -20px;
+    }
+
+     #main-nav-bar {
+        display: none;
+        }
+    
+    #header {
+        height: 95px;
+    }
+    
+    #logo {
+        width: 150px;
+        margin-left: 5%;
+        margin-top: 13px;
+    }
+    
+    #index-title-img {
+        margin-top: -10px;
+    }
+    
+    .title-img {
+        margin-top: -10px;
+    }
+    
+    .img-title {
+        font-size: 30px !important;
+    }
+
+    #main {
+        margin-top: 95px;
+    }
+    
+    #content {
+        width: 85%;
+    }
+    
+    #index-intro {
+        font-size: 16px;
+    }
+    
+    #learn {
+        font-size: 34px !important;
+    }
+    
+    .blurb-images {
+        padding: 0px 0px 60px 0;
+    }
+    
+    .circle-box {
+        width: 125px;
+        max-width: 100%;
+    }
+    
+    .space {
+        margin-top: 40px;
+    }
+    
+    .contact-us {
+        height: 220px !important;
+        padding-top: 45px;
+    }
+    
+    .join {
+        font-size: 30px;
+    }
+    
+    .contact-button {
+        font-size: 24px;
+        padding: 10px;
+        width: 160px;
+    }
+    
+    #gallery {
+        margin-top: 45px !important;
+    }
+    
+    #current-news {
+        font-size: 34px !important;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    
+    #news {
+        margin-bottom: 0px;
+        padding-bottom: 50px;
+        padding-top: 5px;
+        background: #deeff5;
+        margin-top: 0px;
+}
+    
+    #gallery {
+        margin-top: 30px;
+    }
+    
+    #myForm {
+        margin-top: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+        max-width: 100%;
+        float: none;
+    }
+    
+     #master-jane {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+    
+    #family-class {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+    
+    #about {
+        margin-top: 30px;
+    }
+    
+    .accomplishments {
+        margin-top: 30px;
+    }
+    
+#child-tkd {
+    margin-bottom: 35px;
+}
+    
+    .bgcolor {
+        padding: 65px 0 65px 0;
+    }
+    
+.benefits {
+        margin-top: 0 !important;
+    }
+    
+    .school-rules {
+        margin: 30px auto;
+    }
+    
+    #adult-tkd {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    h1 {
+        font-size: 29px !important;
+    }
+
+    #footer {
+        background: lightgray;
+        height: 225px;
+        padding-bottom: 30px;
+    }
+    
+    #footer-contact-info {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        padding-top: 1px;
+        line-height: 2;
+    }
+    
+    #facebook {
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        float: none;
+    }
+    
+    #contact-info {
+        width: auto;
+        margin-top: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        float: none;
+        font-family: Lato;
+        font-size: 16px;
+    }
+    
+    .copyright {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: auto;
+        display: block;
+        margin-top: 25px;
+        font-size: 12px;
+    }
+
+    
+}
+
+
+
